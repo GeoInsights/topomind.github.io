@@ -691,6 +691,280 @@ a {
   background-color: var(--color-bamboo);
 }
 
+/* ===== Assessment & Privacy Section ===== */
+.assessment {
+  position: relative;
+  overflow: hidden;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.assessment-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url('../images/scroll-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.assessment-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(214, 192, 163, 0.56);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(135deg, rgba(255, 252, 245, 0.86), rgba(245, 239, 230, 0.72)),
+    linear-gradient(90deg, rgba(200, 75, 49, 0.08), transparent 42%);
+  box-shadow: 0 24px 70px rgba(124, 87, 44, 0.12);
+}
+
+@media (min-width: 1024px) {
+  .assessment-panel {
+    grid-template-columns: minmax(18rem, 0.82fr) minmax(0, 1.18fr);
+    gap: 3.5rem;
+  }
+}
+
+.assessment-visual {
+  min-height: 24rem;
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(214, 192, 163, 0.42);
+  border-radius: 0.75rem;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(200, 75, 49, 0.16), transparent 12rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(255, 252, 245, 0.3));
+}
+
+.assessment-emblem {
+  position: relative;
+  width: min(17rem, 72vw);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.assessment-emblem::before,
+.assessment-emblem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(214, 192, 163, 0.72);
+  border-radius: 50%;
+}
+
+.assessment-emblem::after {
+  inset: 2.25rem;
+  border-style: dashed;
+  opacity: 0.72;
+}
+
+.server-stack {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 3.2rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.server-stack span {
+  position: relative;
+  display: block;
+  width: 5.6rem;
+  height: 1.35rem;
+  border: 1px solid rgba(44, 44, 44, 0.12);
+  border-radius: 0.38rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(214, 192, 163, 0.42));
+  box-shadow: 0 8px 20px rgba(44, 44, 44, 0.08);
+}
+
+.server-stack span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.6rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: var(--color-teal);
+}
+
+.security-shield {
+  position: relative;
+  z-index: 2;
+  width: 8.5rem;
+  height: 9.8rem;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0, 88% 15%, 82% 72%, 50% 100%, 18% 72%, 12% 15%);
+  background: linear-gradient(155deg, #d56d35, var(--color-vermilion));
+  box-shadow: 0 20px 40px rgba(200, 75, 49, 0.26);
+}
+
+.security-shield::before {
+  content: "";
+  position: absolute;
+  inset: 0.58rem;
+  clip-path: inherit;
+  background: rgba(255, 252, 245, 0.18);
+}
+
+.shield-lock {
+  position: relative;
+  width: 3.4rem;
+  height: 2.6rem;
+  border-radius: 0.42rem;
+  background-color: rgba(255, 252, 245, 0.92);
+  box-shadow: inset 0 -0.25rem 0 rgba(214, 192, 163, 0.42);
+}
+
+.shield-lock::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2.15rem;
+  width: 2rem;
+  height: 1.8rem;
+  transform: translateX(-50%);
+  border: 0.38rem solid rgba(255, 252, 245, 0.92);
+  border-bottom: 0;
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
+.shield-lock::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.42rem;
+  height: 0.78rem;
+  transform: translate(-50%, -28%);
+  border-radius: 999px;
+  background-color: var(--color-vermilion);
+}
+
+.acoustic-wave {
+  position: absolute;
+  right: 1.25rem;
+  top: 4.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.34rem;
+  min-height: 4.5rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(214, 192, 163, 0.52);
+  border-radius: 0.75rem;
+  background: rgba(255, 252, 245, 0.7);
+  box-shadow: 0 12px 28px rgba(44, 44, 44, 0.08);
+}
+
+.acoustic-wave span {
+  display: block;
+  width: 0.38rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--color-teal), var(--color-vermilion));
+}
+
+.acoustic-wave span:nth-child(1) { height: 1.25rem; }
+.acoustic-wave span:nth-child(2) { height: 2rem; }
+.acoustic-wave span:nth-child(3) { height: 3.2rem; }
+.acoustic-wave span:nth-child(4) { height: 2.35rem; }
+.acoustic-wave span:nth-child(5) { height: 1.55rem; }
+
+.assessment-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.assessment-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.1rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid rgba(200, 75, 49, 0.22);
+  border-radius: 999px;
+  background-color: rgba(255, 252, 245, 0.78);
+  color: var(--color-vermilion);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.assessment-kicker {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--color-teal);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.assessment-copy h3 {
+  max-width: 36rem;
+  color: var(--color-ink);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.assessment-copy p {
+  margin-top: 1.25rem;
+  color: rgba(44, 44, 44, 0.7);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.assessment-points {
+  display: grid;
+  gap: 0;
+  margin-top: 1.75rem;
+  list-style: none;
+}
+
+.assessment-points li {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.05rem 0;
+  border-top: 1px solid rgba(214, 192, 163, 0.55);
+}
+
+.assessment-points strong {
+  color: var(--color-vermilion);
+  font-size: 1rem;
+}
+
+.assessment-points span {
+  color: rgba(44, 44, 44, 0.68);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .assessment {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .assessment-visual {
+    min-height: 20rem;
+  }
+
+  .assessment-points li {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+}
+
 /* ===== Showcase Section ===== */
 .showcase {
   position: relative;
