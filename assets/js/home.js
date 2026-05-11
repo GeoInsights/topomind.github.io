@@ -95,11 +95,11 @@
       heroCaptionA: 'Maps and field data',
       heroCaptionB: 'Multimodal understanding',
       heroCaptionC: 'Operational AI agents',
-      ideaEyebrow: 'Our thesis',
+      ideaEyebrow: 'Our approach',
       ideaTitle: 'Turn spatial context into usable intelligence.',
       ideaStatement: 'Real-world questions rarely live in text alone. Place, distance, terrain, culture and human movement often change the answer.',
       ideaCopyA: 'TopoMind is built around Spatial Intelligence, Cognitive Edge: when AI understands where things happen, people can learn faster, analyze more clearly and make better decisions.',
-      ideaCopyB: 'We apply this thesis through two product directions: AI education grounded in culture and geography, and geospatial intelligence agents for analytical teams.',
+      ideaCopyB: 'We apply this approach through two product directions: AI education grounded in culture and geography, and geospatial intelligence agents for analytical teams.',
       focusA: 'Understand place',
       focusAText: 'Transform maps, landmarks, routes, terrain and regional knowledge into AI context that can be retrieved, compared and reasoned over.',
       focusB: 'Fuse multimodal data',
@@ -196,7 +196,7 @@
       fallback: 'I can explain TopoMind, PoemAI, the GeoINT AI Agent, partnership options and contact details. You can also email info@topomind.hk.',
       replies: [
         {
-          keywords: ['thesis', 'idea', 'different', 'company', 'topomind'],
+          keywords: ['idea', 'approach', 'different', 'company', 'topomind'],
           text: 'TopoMind is an AI-native spatial intelligence company. We believe AI needs to understand place, culture, distance, terrain and field data to support real learning, analysis and decisions.'
         },
         {
@@ -222,7 +222,17 @@
   const input = form?.querySelector('input');
   const langToggle = document.querySelector('[data-lang-toggle]');
   const metaDescription = document.querySelector('meta[name="description"]');
-  let currentLang = localStorage.getItem('topomind-lang') === 'en' ? 'en' : 'zh';
+  const languageStorageKey = 'topomind-lang';
+  const languageVersionKey = 'topomind-default-language';
+  const languageVersion = 'en-2026-05';
+
+  if (localStorage.getItem(languageVersionKey) !== languageVersion) {
+    localStorage.removeItem(languageStorageKey);
+    localStorage.setItem(languageVersionKey, languageVersion);
+  }
+
+  const savedLang = localStorage.getItem(languageStorageKey);
+  let currentLang = savedLang === 'zh' || savedLang === 'en' ? savedLang : 'en';
 
   const setText = (lang) => {
     const dictionary = translations[lang];
@@ -348,7 +358,7 @@
 
   langToggle?.addEventListener('click', () => {
     currentLang = currentLang === 'zh' ? 'en' : 'zh';
-    localStorage.setItem('topomind-lang', currentLang);
+    localStorage.setItem(languageStorageKey, currentLang);
     setText(currentLang);
     resetChat();
   });
