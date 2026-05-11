@@ -162,4 +162,121 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // ===== Product contact assistant =====
+  const chatWidget = document.querySelector('[data-product-chat-widget]');
+  const chatLauncher = document.querySelector('[data-product-chat-toggle]');
+  const chatMessages = document.querySelector('[data-product-chat-messages]');
+  const chatForm = document.querySelector('[data-product-chat-form]');
+  const chatInput = chatForm?.querySelector('input');
+
+  const chatPrompts = {
+    product: '介紹詩語山河',
+    pilot: '學校可以怎樣試點',
+    contact: '給我聯繫方式'
+  };
+
+  const chatReplies = [
+    {
+      keywords: ['產品', '介紹', '詩語山河', 'praise', '普通話', '詩詞'],
+      text: '詩語山河是 TopoMind 的詩詞普通話 AI 課堂，結合詩詞地圖、PRAISE 自研普通話語音聲學評價模型、AI 跟讀糾音、小詩仙陪學與教師班級管理，幫助學生在文化情境中學普通話。'
+    },
+    {
+      keywords: ['試點', '學校', '課堂', '老師', '合作', 'pilot'],
+      text: '學校試點可以從一個班級或一個普通話學習單元開始。我們可以協助梳理課堂流程、教師後台使用方式、學生語音數據管理和試點評估指標。'
+    },
+    {
+      keywords: ['聯繫', '聯絡', 'email', '郵箱', '方式', 'contact'],
+      text: '你可以電郵聯繫 TopoMind：info@topomind.hk。請簡單說明你的學校或機構、學生年級、預計試點場景，我們會跟進。'
+    }
+  ];
+
+  const addChatBubble = (text, type) => {
+    if (!chatMessages) {
+      return;
+    }
+
+    const bubble = document.createElement('p');
+    bubble.className = `product-chat-bubble ${type}`;
+    bubble.textContent = text;
+    chatMessages.appendChild(bubble);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  };
+
+  const resetProductChat = () => {
+    if (!chatMessages) {
+      return;
+    }
+
+    chatMessages.innerHTML = '';
+    addChatBubble('你好，我是詩語山河的 AI 聯繫助手。你可以問產品介紹、學校試點、教師使用方式，或直接索取聯繫方式。', 'assistant');
+  };
+
+  const openProductChat = () => {
+    if (!chatWidget || !chatLauncher || !chatInput) {
+      return;
+    }
+
+    chatWidget.classList.add('open');
+    chatLauncher.setAttribute('aria-expanded', 'true');
+    requestAnimationFrame(() => chatInput.focus());
+  };
+
+  const closeProductChat = () => {
+    if (!chatWidget || !chatLauncher) {
+      return;
+    }
+
+    chatWidget.classList.remove('open');
+    chatLauncher.setAttribute('aria-expanded', 'false');
+  };
+
+  const getProductReply = (message) => {
+    const normalized = message.trim().toLowerCase();
+    const match = chatReplies.find(reply => reply.keywords.some(keyword => normalized.includes(keyword.toLowerCase())));
+    return match ? match.text : '我可以介紹詩語山河的產品能力、學校試點方式、教師管理後台和聯繫方式。你也可以直接電郵 info@topomind.hk。';
+  };
+
+  const sendProductMessage = (message) => {
+    const cleanMessage = message.trim();
+    if (!cleanMessage) {
+      return;
+    }
+
+    addChatBubble(cleanMessage, 'user');
+    addChatBubble(getProductReply(cleanMessage), 'assistant');
+  };
+
+  resetProductChat();
+
+  document.querySelectorAll('[data-product-chat-open]').forEach(trigger => {
+    trigger.addEventListener('click', openProductChat);
+  });
+
+  chatLauncher?.addEventListener('click', () => {
+    if (chatWidget?.classList.contains('open')) {
+      closeProductChat();
+    } else {
+      openProductChat();
+    }
+  });
+
+  document.querySelectorAll('[data-product-chat-close]').forEach(button => {
+    button.addEventListener('click', closeProductChat);
+  });
+
+  document.querySelectorAll('[data-product-chat-prompt]').forEach(button => {
+    button.addEventListener('click', () => {
+      openProductChat();
+      sendProductMessage(chatPrompts[button.dataset.productChatPrompt] || '');
+    });
+  });
+
+  chatForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    sendProductMessage(chatInput?.value || '');
+    if (chatInput) {
+      chatInput.value = '';
+    }
+  });
+
 });

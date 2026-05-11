@@ -75,6 +75,7 @@ h1 {
   font-size: clamp(3rem, 5.7vw, 5.35rem);
   font-weight: 740;
   line-height: 1.05;
+  white-space: pre-line;
   text-wrap: balance;
 }
 
@@ -741,7 +742,7 @@ main,
 
 html[lang="en"] h1 {
   max-width: 860px;
-  font-size: clamp(2.9rem, 5.2vw, 5rem);
+  font-size: clamp(2.65rem, 4.7vw, 4.55rem);
 }
 
 html[lang="en"] .hero-lead {
@@ -797,6 +798,10 @@ html[lang="en"] .hero-lead {
   html[lang="en"] h1 {
     font-size: 2.55rem;
     line-height: 1.04;
+  }
+
+  html[lang="en"] h1 {
+    font-size: 2.35rem;
   }
 
   h2 {

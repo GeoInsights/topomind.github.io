@@ -29,7 +29,7 @@
           <button class="nav-link" data-scroll-to="hero">產品首頁</button>
           <button class="nav-link" data-scroll-to="features">平台特色</button>
           <button class="nav-link" data-scroll-to="showcase">詩詞地圖</button>
-          <a class="nav-link" href="mailto:info@topomind.hk?subject=PoemAI%20Product%20Inquiry">聯絡我們</a>
+          <button class="nav-link" type="button" data-product-chat-open>聯絡我們</button>
 
         </nav>
       </div>
@@ -54,7 +54,7 @@
               詩到山水處，語通天下心。跟著詩人遊中國，學詩詞，學普通話。
             </p>
             <p class="hero-tagline">
-              TopoMind 旗下 AI 普通話教育產品，結合詩詞地圖、自研語音聲學評價模型與學生語音數據本地化保護。
+              TopoMind 旗下AI普通話教育產品，由自研語音聲學評價模型PRAISE驅動。
             </p>
             <div class="hero-cta">
               <a class="btn-primary btn-primary-lg" href="https://praise.topomind.hk">進入系統</a>
@@ -362,13 +362,13 @@
 
           <h2 class="scroll-reveal section-title">開啟你的詩詞普通話之旅</h2>
 
-          <p class="scroll-reveal mt-5" style="color: rgba(44, 44, 44, 0.65); line-height: 1.625; max-width: 30rem; margin-left: auto; margin-right: auto;">
+          <p class="scroll-reveal cta-desc">
             提供完整的普通話學習解決方案。
             讓每一位學生都能在詩詞的浸潤中，自然而然地掌握標準普通話。
           </p>
 
           <div class="scroll-reveal cta-buttons">
-            <a class="btn-primary btn-primary-lg" href="mailto:info@topomind.hk?subject=PoemAI%20Product%20Inquiry">聯絡我們</a>
+            <button class="btn-primary btn-primary-lg" type="button" data-product-chat-open>聯絡我們</button>
           </div>
 
           <div class="scroll-reveal cta-xiaoshixian">
@@ -378,6 +378,38 @@
       </div>
     </section>
   </main>
+
+  <div class="product-chat-widget" data-product-chat-widget>
+    <section class="product-chat-panel" id="product-contact-chat" aria-label="詩語山河 AI 聯繫助手">
+      <header class="product-chat-header">
+        <span class="product-bot-avatar" aria-hidden="true"><span></span></span>
+        <div>
+          <strong>詩語山河 AI 聯繫助手</strong>
+          <p>可以問產品 試點合作 或聯繫方式</p>
+        </div>
+        <button class="product-chat-close" type="button" data-product-chat-close aria-label="關閉對話">×</button>
+      </header>
+
+      <div class="product-chat-messages" data-product-chat-messages></div>
+
+      <div class="product-quick-replies" aria-label="快速問題">
+        <button type="button" data-product-chat-prompt="product">產品介紹</button>
+        <button type="button" data-product-chat-prompt="pilot">學校試點</button>
+        <button type="button" data-product-chat-prompt="contact">聯繫方式</button>
+      </div>
+
+      <form class="product-chat-form" data-product-chat-form>
+        <label class="sr-only" for="product-chat-input">輸入問題</label>
+        <input id="product-chat-input" name="message" type="text" autocomplete="off" placeholder="輸入：產品、試點、聯繫方式..." />
+        <button type="submit">送出</button>
+      </form>
+    </section>
+
+    <button class="product-chat-launcher" type="button" data-product-chat-toggle aria-expanded="false" aria-controls="product-contact-chat">
+      <span class="product-bot-avatar" aria-hidden="true"><span></span></span>
+      <span>聯絡我們</span>
+    </button>
+  </div>
 
   <!-- ===== Footer ===== -->
   <footer id="footer" class="footer">
