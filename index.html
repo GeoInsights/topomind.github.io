@@ -1,242 +1,259 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TopoMind builds Spatial Intelligence systems that turn maps, imagery, culture and field data into Cognitive Edge for learning, geospatial analysis and decision workflows.">
-  <title>TopoMind | Spatial Intelligence, Cognitive Edge</title>
+  <meta name="description" content="TopoMind 是一家 AI 原生空間智能公司，將地圖、影像、文化知識與工作流轉化為可對話、可推理、可落地的 AI 產品。">
+  <title>TopoMind｜AI 原生空間智能公司</title>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="stylesheet" type="text/css" href="assets/css/home.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="TopoMind Home">
-      <img src="assets/images/topomind-transparent.png" alt="TopoMind" class="brand-mark">
-      <span class="brand-text">
-        <span class="brand-title">TopoMind</span>
-        <span class="brand-subtitle">Spatial Intelligence, Cognitive Edge</span>
-      </span>
+    <a class="brand" href="index.html" aria-label="TopoMind 首頁">
+      <img
+        src="assets/images/topomind-logo-header-transparent.png"
+        alt="TopoMind Spatial Intelligence, Cognitive Edge"
+        class="brand-logo"
+        width="1378"
+        height="336"
+      >
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#positioning">About</a>
-      <a href="#capability">Capabilities</a>
-      <a href="#products">Products</a>
-      <a href="#team">Team</a>
-      <a href="mailto:info@topomind.hk?subject=TopoMind%20Website%20Inquiry">Contact</a>
+
+    <nav class="site-nav" aria-label="主導航">
+      <a href="#idea" data-i18n="navIdea">關於</a>
+      <a href="#products" data-i18n="navProducts">產品</a>
+      <a href="#capability" data-i18n="navCapability">能力</a>
+      <a href="#team" data-i18n="navTeam">團隊</a>
+      <button class="nav-contact" type="button" data-chat-open data-i18n="navContact">聯繫</button>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">EN</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Spatial Intelligence, Cognitive Edge</p>
-        <h2>AI that understands place, context and consequence.</h2>
-        <p class="hero-lead">
-          TopoMind builds place-aware AI products that reason over maps, imagery, cultural knowledge and field data, giving learners and decision makers a sharper Cognitive Edge in the real world.
+        <p class="eyebrow" data-i18n="heroEyebrow">Spatial Intelligence for Real-world AI</p>
+        <h1 id="hero-title" data-i18n="heroTitle">讓 AI 理解真實世界的脈絡。</h1>
+        <p class="hero-lead" data-i18n="heroLead">
+          TopoMind 將地圖、影像、文化知識、語音與工作流，轉化為可對話、可推理、可落地的 AI 產品，服務教育與地理智能場景。
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#positioning">Explore the Thesis</a>
-          <a class="button secondary" href="mailto:info@topomind.hk?subject=TopoMind%20Website%20Inquiry">Contact Us</a>
+          <a class="button primary" href="poemai.html" data-i18n="heroPrimary">查看詩語山河</a>
+          <button class="button secondary" type="button" data-chat-open data-i18n="heroSecondary">和我們聊聊</button>
         </div>
       </div>
-      <div class="hero-panel" aria-label="TopoMind Spatial Intelligence platform visual">
-        <div class="copilot-card">
-          <span>Spatial Intelligence Engine</span>
-          <p>Place-aware reasoning for learning, analysis and action.</p>
-        </div>
-        <div class="orbit-map">
-          <img src="assets/images/topomind-transparent.png" alt="">
-          <span class="node node-a"></span>
-          <span class="node node-b"></span>
-          <span class="node node-c"></span>
-        </div>
-        <div class="signal-card signal-top">
-          <span>Context</span>
-          <strong>Maps, imagery, culture and field signals</strong>
-        </div>
-        <div class="signal-card signal-bottom">
-          <span>Edge</span>
-          <strong>Sharper judgment from spatial evidence</strong>
-        </div>
-      </div>
+
+      <figure class="hero-visual">
+        <img
+          src="assets/images/home-hero-spatial-ai.png"
+          alt="抽象地形、地圖圖層與 AI 網絡的空間智能視覺"
+          width="1536"
+          height="1024"
+          data-i18n-attr="alt:heroImageAlt"
+        >
+        <figcaption class="visual-caption">
+          <span data-i18n="heroCaptionA">地圖與現場資料</span>
+          <span data-i18n="heroCaptionB">多模態理解</span>
+          <span data-i18n="heroCaptionC">可落地的 AI Agent</span>
+        </figcaption>
+      </figure>
     </section>
 
-    <section class="metrics" aria-label="TopoMind platform metrics">
-      <article>
-        <strong>Spatial Intelligence</strong>
-        <span>AI grounded in place, distance, movement, terrain and regional context</span>
-      </article>
-      <article>
-        <strong>Cognitive Edge</strong>
-        <span>Clearer understanding when spatial evidence becomes actionable insight</span>
-      </article>
-      <article>
-        <strong>Applied Products</strong>
-        <span>From poetry-based Putonghua learning to geospatial intelligence workflows</span>
-      </article>
-    </section>
-
-    <section id="positioning" class="section positioning">
-      <div>
-        <p class="eyebrow">Company Thesis</p>
-        <h2>TopoMind turns spatial context into cognitive advantage.</h2>
-      </div>
-      <div class="positioning-copy">
-        <p>
-          Most AI systems reason from text. Real-world problems also depend on where things happen: terrain, infrastructure, culture, mobility, exposure and local knowledge. Spatial Intelligence is the capability to model that context and make it usable.
-        </p>
-        <p>
-          Cognitive Edge is the result: faster understanding, better judgment and more confident action. TopoMind applies this thesis through two product directions: culture-rich AI education and agentic geospatial intelligence for teams that need to learn, analyze and decide with place-aware context.
-        </p>
-      </div>
-    </section>
-
-    <section id="capability" class="section">
+    <section id="idea" class="section thesis-section">
       <div class="section-heading">
-        <p class="eyebrow">Spatial Intelligence Stack</p>
-        <h2>The foundation behind TopoMind products</h2>
-        <p>We combine spatial knowledge modelling, multimodal data fusion and agentic workflows so AI can move from describing a place to reasoning about what it means.</p>
+        <p class="eyebrow" data-i18n="ideaEyebrow">我們的理念</p>
+        <h2 data-i18n="ideaTitle">把空間脈絡變成可用的智能。</h2>
       </div>
-      <div class="capability-grid">
-        <article class="capability-card">
-          <span>01</span>
-          <h3>Place Knowledge Graph</h3>
-          <p>Model places, routes, landmarks, cultural references and geospatial entities as structured context that AI can retrieve, compare and reason over.</p>
-        </article>
-        <article class="capability-card">
-          <span>02</span>
-          <h3>Spatial Data Fusion</h3>
-          <p>Bring together maps, open data, remote sensing, private datasets and field observations into one analytical context for human and AI workflows.</p>
-        </article>
-        <article class="capability-card">
-          <span>03</span>
-          <h3>Multimodal Interfaces</h3>
-          <p>Connect voice, maps, imagery, text and companion interfaces so users can ask spatial questions, inspect evidence and build understanding naturally.</p>
-        </article>
-        <article class="capability-card">
-          <span>04</span>
-          <h3>Agentic Spatial Workflows</h3>
-          <p>Turn GIS operations, map overlays, monitoring, risk summaries and report generation into guided AI-agent workflows with human review.</p>
-        </article>
+      <div class="thesis-grid">
+        <p class="thesis-statement" data-i18n="ideaStatement">
+          真實世界的問題很少只存在於文字裡。地點、距離、地貌、文化與人的活動軌跡，往往決定了答案。
+        </p>
+        <div class="thesis-copy">
+          <p data-i18n="ideaCopyA">
+            TopoMind 的核心信念是 Spatial Intelligence, Cognitive Edge：當 AI 能理解事情發生在哪裡，人就能更快理解現場，更準確地學習、分析與決策。
+          </p>
+          <p data-i18n="ideaCopyB">
+            我們把這個理念落到兩類產品中：文化與地理結合的 AI 教育，以及面向團隊分析工作的地理智能 AI Agent。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section focus-section" aria-label="TopoMind 核心能力">
+      <div class="focus-item">
+        <span>01</span>
+        <h3 data-i18n="focusA">理解地點</h3>
+        <p data-i18n="focusAText">把地圖、地標、路徑、地貌與區域知識轉化為 AI 可檢索、可比較、可推理的上下文。</p>
+      </div>
+      <div class="focus-item">
+        <span>02</span>
+        <h3 data-i18n="focusB">融合多模態資料</h3>
+        <p data-i18n="focusBText">連接地圖、影像、語音、文本、開放數據與私有資料，形成一致的分析和學習背景。</p>
+      </div>
+      <div class="focus-item">
+        <span>03</span>
+        <h3 data-i18n="focusC">構建可協作 Agent</h3>
+        <p data-i18n="focusCText">把學習評測、GIS 操作、監測摘要與報告生成，變成有人類參與審核的智能流程。</p>
       </div>
     </section>
 
     <section id="products" class="section products-section">
       <div class="section-heading">
-        <p class="eyebrow">Applied Cognitive Edge</p>
-        <h2>Two products, one Spatial Intelligence thesis</h2>
+        <p class="eyebrow" data-i18n="productsEyebrow">產品</p>
+        <h2 data-i18n="productsTitle">從學習到決策，讓 AI 進入真實場景。</h2>
       </div>
+
       <div class="product-grid">
-        <article class="product-card featured">
-          <div class="product-media">
-            <img src="assets/images/p1.login.png" alt="Poetry map for Shi Yu Shan He">
-          </div>
-          <div class="product-body">
-            <h3>Spatial Intelligence for Learning</h3>
-            <p class="product-name">Shi Yu Shan He | Poetry Putonghua AI Classroom</p>
-            <p>
-              A Putonghua learning product where Chinese geography, classical poetry and speech assessment reinforce each other. Students do not learn pronunciation as isolated sounds; they learn through poems, places, cultural memory and AI-guided practice.
+        <article class="product-card product-featured">
+          <img
+            src="assets/images/p1.login.png"
+            alt="詩語山河詩詞普通話 AI 課堂介面"
+            width="1536"
+            height="960"
+            data-i18n-attr="alt:poemImageAlt"
+        >
+          <div class="product-copy">
+            <h3 data-i18n="poemTitle">詩語山河｜詩詞普通話 AI 課堂</h3>
+            <p data-i18n="poemText">
+              以中國地理與古典詩詞為脈絡，結合 PRAISE 自研普通話語音聲學評價模型，讓學生在地圖、詩詞和 AI 跟讀中學習普通話。
             </p>
             <ul>
-              <li>Poetry and landmarks connected through an interactive knowledge map</li>
-              <li>Real-time pronunciation assessment powered by PRAISE</li>
-              <li>Teacher workflow for class records, progress tracking and targeted practice</li>
+              <li data-i18n="poemPointA">詩詞地點與文化知識圖譜</li>
+              <li data-i18n="poemPointB">普通話朗讀、糾音與多維評分</li>
+              <li data-i18n="poemPointC">教師班級後台與學習記錄追蹤</li>
             </ul>
-            <a class="button primary" href="poemai.html">Product Page</a>
+            <a class="button primary" href="poemai.html" data-i18n="poemCta">進入產品頁</a>
           </div>
         </article>
 
         <article class="product-card">
-          <div class="product-media geo-media">
-            <div class="geo-dashboard">
-              <span class="scan-line"></span>
-              <span class="geo-dot dot-a"></span>
-              <span class="geo-dot dot-b"></span>
-              <span class="geo-dot dot-c"></span>
-              <strong>GeoINT AI Agent</strong>
-            </div>
-          </div>
-          <div class="product-body">
-            <h3>Spatial Intelligence for Decisions</h3>
-            <p class="product-name">Geospatial Intelligence and Analysis AI Agent</p>
-            <p>
-              An AI-agent product for teams that need to turn location data into operational judgment. It connects open data, private datasets and remote-sensing evidence, then guides users through analysis, monitoring and reporting workflows.
+          <img
+            src="assets/images/home-geoint-ai.png"
+            alt="地理智能 AI Agent 的空間分析視覺"
+            width="1536"
+            height="1024"
+            data-i18n-attr="alt:geoImageAlt"
+        >
+          <div class="product-copy">
+            <h3 data-i18n="geoTitle">地理智能與分析 AI Agent</h3>
+            <p data-i18n="geoText">
+              面向需要使用地點資料、遙感影像與現場證據的團隊，協助完成數據匯聚、空間分析、風險監測與決策報告。
             </p>
             <ul>
-              <li>Open-data aggregation, private-data fusion and evidence management</li>
-              <li>Conversational GIS, remote-sensing and spatial-analysis workflows</li>
-              <li>Risk monitoring, spatial briefs and decision-ready reporting</li>
+              <li data-i18n="geoPointA">開放數據與私有數據融合</li>
+              <li data-i18n="geoPointB">對話式 GIS 和遙感分析流程</li>
+              <li data-i18n="geoPointC">監測摘要、風險研判與報告生成</li>
             </ul>
-            <span class="button disabled">Coming soon</span>
+            <button class="button secondary" type="button" data-chat-open data-i18n="geoCta">了解合作可能</button>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section industries">
+    <section id="capability" class="section capability-section">
       <div class="section-heading">
-        <p class="eyebrow">Where the Edge Appears</p>
-        <h2>Spatial Intelligence is useful wherever context changes the answer</h2>
+        <p class="eyebrow" data-i18n="capabilityEyebrow">核心能力</p>
+        <h2 data-i18n="capabilityTitle">一個清晰的空間智能工作流。</h2>
       </div>
-      <div class="industry-list">
-        <p><strong>Education</strong><span>Connect language, culture and geography so students learn through meaningful places, not disconnected exercises.</span></p>
-        <p><strong>Public Sector</strong><span>Support urban observation, regional analysis, emergency planning and evidence-based spatial decisions.</span></p>
-        <p><strong>NGO and Social Impact</strong><span>Turn field reports, environmental signals and location data into clearer monitoring and response workflows.</span></p>
-        <p><strong>Business Intelligence</strong><span>Read market, site, exposure and supply-chain questions through the lens of place and movement.</span></p>
-      </div>
+      <ol class="capability-steps">
+        <li>
+          <span data-i18n="stepA">建模</span>
+          <p data-i18n="stepAText">把地點、路徑、文化引用和地理實體建成可用知識。</p>
+        </li>
+        <li>
+          <span data-i18n="stepB">融合</span>
+          <p data-i18n="stepBText">整合地圖、影像、語音、文本、私有資料和開放數據。</p>
+        </li>
+        <li>
+          <span data-i18n="stepC">對話</span>
+          <p data-i18n="stepCText">讓使用者用自然語言提問、檢視證據、調整分析方向。</p>
+        </li>
+        <li>
+          <span data-i18n="stepD">行動</span>
+          <p data-i18n="stepDText">輸出學習建議、分析摘要、監測結果和決策報告。</p>
+        </li>
+      </ol>
     </section>
 
     <section id="team" class="section team-section">
       <div class="section-heading">
-        <p class="eyebrow">Team</p>
-        <h2>Core team</h2>
-        <p>TopoMind is led by practitioners with deep experience in GIS systems, spatial big data, data science and Hong Kong market development.</p>
+        <p class="eyebrow" data-i18n="teamEyebrow">團隊</p>
+        <h2 data-i18n="teamTitle">懂地理、懂數據，也懂產品落地。</h2>
       </div>
       <div class="team-grid">
         <article class="team-card">
-          <div class="team-photo" aria-label="Photo placeholder">
-            <img src="assets/images/luwei.jpg" alt="Dr. LU WEI">
-          </div>
-          <div class="team-profile">
+          <img src="assets/images/luwei.jpg" alt="Dr. LU WEI" width="300" height="380">
+          <div>
             <p class="team-role">Founder & CEO</p>
             <h3>Dr. LU WEI</h3>
-            <p>PhD in GIS, with 10 years of experience in GIS system development and spatial big data analysis. He leads TopoMind's Spatial Intelligence product direction, geospatial technology architecture and applied R&D.</p>
+            <p data-i18n="luweiBio">GIS 博士，具備 10 年 GIS 系統開發與空間大數據分析經驗，負責 TopoMind 的空間智能產品方向、地理技術架構與應用研發。</p>
             <div class="team-links">
-              <a href="https://x.com/knowayxyz" aria-label="Dr. LU WEI on X">X</a>
-              <a href="https://github.com/luwei14" aria-label="Dr. LU WEI on GitHub">GitHub</a>
+              <a href="https://x.com/knowayxyz">X</a>
+              <a href="https://github.com/luwei14">GitHub</a>
             </div>
           </div>
         </article>
         <article class="team-card">
-          <div class="team-photo" aria-label="Photo placeholder">
-            <img src="assets/images/issac.png" alt="Issac, CK Tai">
-          </div>
-          <div class="team-profile">
+          <img src="assets/images/issac.png" alt="Issac, CK Tai" width="300" height="380">
+          <div>
             <p class="team-role">Hong Kong Market Advisor</p>
             <h3>Issac, CK Tai</h3>
-            <p>Master's degree in Mathematics and Data Science, with 10 years of experience as a data analyst. He advises TopoMind on Hong Kong market development, customer insight and data-driven go-to-market strategy.</p>
+            <p data-i18n="issacBio">數學與數據科學背景，具備 10 年數據分析經驗，協助 TopoMind 拓展香港市場、理解客戶場景與制定數據驅動的落地策略。</p>
             <div class="team-links">
-              <a href="https://issactai0124.github.io/" aria-label="Issac, CK Tai">Website</a>
+              <a href="https://issactai0124.github.io/">Website</a>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact-band">
+    <section class="contact-section">
       <div>
-        <p class="eyebrow">Partner with TopoMind</p>
-        <h2>Build Cognitive Edge into your next spatial workflow.</h2>
-        <p>We work with education institutions, cultural content partners, government teams, NGOs, geospatial data teams and AI transformation partners.</p>
+        <p class="eyebrow" data-i18n="contactEyebrow">開始合作</p>
+        <h2 data-i18n="contactTitle">如果你的工作和地點、學習或決策有關，我們可以聊聊。</h2>
+        <p data-i18n="contactText">你可以直接打開右下角 AI 聯繫助手，快速了解 TopoMind 的理念、產品和合作方式。</p>
       </div>
-      <a class="button primary" href="mailto:info@topomind.hk?subject=TopoMind%20Website%20Inquiry">Contact TopoMind</a>
+      <button class="button primary" type="button" data-chat-open data-i18n="contactCta">打開 AI 聯繫助手</button>
     </section>
   </main>
+
+  <div class="chat-widget" data-chat-widget>
+    <section class="chat-panel" id="contact-chat" aria-label="TopoMind AI 聯繫助手" data-i18n-attr="aria-label:chatAria">
+      <header class="chat-header">
+        <span class="bot-avatar" aria-hidden="true"><span></span></span>
+        <div>
+          <strong data-i18n="chatTitle">TopoMind AI 聯繫助手</strong>
+          <p data-i18n="chatSubtitle">可以問理念、產品、合作與聯絡方式</p>
+        </div>
+        <button class="chat-close" type="button" data-chat-close aria-label="關閉對話" data-i18n-attr="aria-label:chatClose">×</button>
+      </header>
+      <div class="chat-messages" data-chat-messages></div>
+      <div class="quick-replies" aria-label="快速問題" data-i18n-attr="aria-label:quickReplies">
+        <button type="button" data-chat-prompt="idea" data-i18n="quickIdea">理念</button>
+        <button type="button" data-chat-prompt="products" data-i18n="quickProducts">產品</button>
+        <button type="button" data-chat-prompt="partnership" data-i18n="quickPartnership">合作</button>
+        <button type="button" data-chat-prompt="contact" data-i18n="quickContact">聯繫方式</button>
+      </div>
+      <form class="chat-form" data-chat-form>
+        <label class="sr-only" for="chat-input" data-i18n="chatInputLabel">輸入問題</label>
+        <input id="chat-input" name="message" type="text" autocomplete="off" placeholder="輸入：產品、合作、聯繫方式..." data-i18n-attr="placeholder:chatPlaceholder">
+        <button type="submit" data-i18n="chatSend">送出</button>
+      </form>
+    </section>
+
+    <button class="chat-launcher" type="button" data-chat-toggle aria-expanded="false" aria-controls="contact-chat">
+      <span class="bot-avatar" aria-hidden="true"><span></span></span>
+      <span data-i18n="chatLauncher">聯繫我們</span>
+    </button>
+  </div>
 
   <footer class="site-footer">
     <span>&copy; 2026 TopoMind Limited</span>
     <span>Spatial Intelligence, Cognitive Edge</span>
     <a href="mailto:info@topomind.hk?subject=TopoMind%20Website%20Inquiry">info@topomind.hk</a>
   </footer>
+
+  <script src="assets/js/home.js"></script>
 </body>
 </html>
