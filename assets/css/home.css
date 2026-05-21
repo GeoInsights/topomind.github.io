@@ -333,7 +333,6 @@ main,
 }
 
 .focus-item span,
-.team-role,
 .capability-steps span {
   display: block;
   margin-bottom: 18px;
@@ -434,50 +433,6 @@ main,
 .capability-steps p {
   max-width: 620px;
   margin-bottom: 0;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.team-card {
-  display: grid;
-  grid-template-columns: 104px minmax(0, 1fr);
-  gap: 20px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.68);
-}
-
-.team-card img {
-  width: 104px;
-  height: 124px;
-  border-radius: 8px;
-  object-fit: cover;
-  background: var(--surface-muted);
-}
-
-.team-role {
-  margin-bottom: 8px;
-}
-
-.team-card p:last-of-type {
-  margin-bottom: 0;
-}
-
-.team-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 16px;
-}
-
-.team-links a {
-  color: var(--accent);
-  font-weight: 700;
 }
 
 .contact-section {
@@ -773,7 +728,6 @@ html[lang="en"] .hero-lead {
   .focus-section,
   .product-grid,
   .capability-section,
-  .team-grid,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -834,18 +788,8 @@ html[lang="en"] .hero-lead {
   }
 
   .focus-item,
-  .product-copy,
-  .team-card {
+  .product-copy {
     padding: 22px;
-  }
-
-  .team-card {
-    grid-template-columns: 1fr;
-  }
-
-  .team-card img {
-    width: 96px;
-    height: 116px;
   }
 
   .contact-section {
