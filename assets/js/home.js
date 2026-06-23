@@ -2,219 +2,177 @@
   const translations = {
     zh: {
       pageTitle: 'TopoMind AI 原生空間智能公司',
-      metaDescription: 'TopoMind 是一家 AI 原生空間智能公司，將地圖、影像、文化知識與工作流轉化為可對話、可推理、可落地的 AI 產品。',
-      brandSubtitle: 'AI 原生空間智能公司',
-      navIdea: '關於',
-      navProducts: '產品',
-      navCapability: '能力',
-      navContact: '聯繫',
-      heroEyebrow: 'Spatial Intelligence for Real World AI',
-      heroTitle: '讓AI理解\n真實世界的脈絡',
-      heroLead: 'TopoMind 將地圖、影像、文化知識、語音與工作流，轉化為可對話、可推理、可落地的 AI 產品，服務教育與地理智能場景。',
-      heroPrimary: '查看詩語山河',
-      heroSecondary: '和我們聊聊',
-      heroImageAlt: '抽象地形、地圖圖層與 AI 網絡的空間智能視覺',
-      heroCaptionA: '地圖與現場資料',
-      heroCaptionB: '多模態理解',
-      heroCaptionC: '可落地的 AI Agent',
-      ideaEyebrow: '我們的理念',
-      ideaTitle: '把空間脈絡變成可用的智能',
-      ideaStatement: '真實世界的問題很少只存在於文字裡。地點、距離、地貌、文化與人的活動軌跡，往往決定了答案。',
-      ideaCopyA: 'TopoMind 的核心信念是 Spatial Intelligence, Cognitive Edge：當 AI 能理解事情發生在哪裡，人就能更快理解現場，更準確地學習、分析與決策。',
-      ideaCopyB: '我們把這個理念落到兩類產品中：文化與地理結合的 AI 教育，以及面向團隊分析工作的地理智能 AI Agent。',
-      focusA: '理解地點',
-      focusAText: '把地圖、地標、路徑、地貌與區域知識轉化為 AI 可檢索、可比較、可推理的上下文。',
-      focusB: '融合多模態資料',
-      focusBText: '連接地圖、影像、語音、文本、開放數據與私有資料，形成一致的分析和學習背景。',
-      focusC: '構建可協作 Agent',
-      focusCText: '把學習評測、GIS 操作、監測摘要與報告生成，變成有人類參與審核的智能流程。',
-      productsEyebrow: '產品',
-      productsTitle: '從學習到決策 讓 AI 進入真實場景',
-      poemImageAlt: '詩語山河詩詞普通話 AI 課堂介面',
-      poemTitle: '詩語山河 詩詞普通話 AI 課堂',
-      poemText: '以中國地理與古典詩詞為脈絡，結合 PRAISE 自研普通話語音聲學評價模型，讓學生在地圖、詩詞和 AI 跟讀中學習普通話。',
-      poemPointA: '詩詞地點與文化知識圖譜',
-      poemPointB: '普通話朗讀、糾音與多維評分',
-      poemPointC: '教師班級後台與學習記錄追蹤',
-      poemCta: '進入產品頁',
-      geoImageAlt: '地理智能 AI Agent 的空間分析視覺',
-      geoTitle: '地理智能與分析 AI Agent',
-      geoText: '面向需要使用地點資料、遙感影像與現場證據的團隊，協助完成數據匯聚、空間分析、風險監測與決策報告。',
-      geoPointA: '開放數據與私有數據融合',
-      geoPointB: '對話式 GIS 和遙感分析流程',
-      geoPointC: '監測摘要、風險研判與報告生成',
-      geoCta: '了解合作可能',
+      metaDescription: 'TopoMind 是一家成立於香港的 AI 原生智能解決方案公司，以真實世界空間語境為基礎，為教育、政府、公益與企業提供從策略到落地的一站式客製化 AI 服務。',
+      navAria: '主導航',
+      navAbout: '公司簡介',
+      navProducts: '產品方案',
+      navCapability: '核心能力',
+      navVision: '公司願景',
+      navContact: '聯繫我們',
+      heroBadge: 'SPATIAL INTELLIGENCE · 香港',
+      heroTitle: '讓 AI 理解\n真實世界的脈絡',
+      heroKicker: 'Spatial Intelligence for Real-World AI',
+      heroLead: 'TopoMind 是一家成立於香港的 AI 原生智能解決方案公司，以真實世界空間語境為基礎，為教育、政府、公益與企業提供從策略到落地的一站式客製化 AI 服務。',
+      heroPrimary: '探索產品方案',
+      heroSecondary: '了解合作方式',
+      serviceAria: 'TopoMind 服務對象',
+      serviceLabel: '服務對象',
+      serviceEducation: '教育機構',
+      serviceGovernment: '政府部門',
+      serviceNgo: '公益組織',
+      serviceBusiness: '中小型企業',
+      aboutEyebrow: '公司簡介',
+      aboutTitle: '提供真實世界語境下的 AI 解決方案',
+      aboutLead: '我們為教育機構、政府部門、公益組織及中小型企業，提供從策略諮詢、方案設計到落地實施的一站式客製化 AI 服務。核心能力涵蓋 AI 教育培訓、多模態智能產品開發，以及將大模型技術嵌入客戶業務流程的端到端交付。',
+      pillarATitle: '策略諮詢',
+      pillarAText: '釐清場景、資料與組織目標，制定能從試點走向常態化使用的 AI 導入路線。',
+      pillarBTitle: '方案設計',
+      pillarBText: '以多模態產品和工作流為核心，把地圖、影像、文本、語音與私有資料放入同一個業務語境。',
+      pillarCTitle: '落地交付',
+      pillarCText: '完成模型、資料、界面與人機協同流程的端到端部署，讓 AI 真正進入日常工作。',
+      productsEyebrow: '產品方案',
+      productsTitle: '三款旗艦 AI 產品',
+      productsSubtitle: 'From classical poetry to spatial intelligence',
+      productAAlt: '詩語山河 PRAISE 產品能力展示',
+      productALabel: '文化 × 語言',
+      productATitle: '詩語山河 PRAISE',
+      productASubtitle: 'AI Chinese Learning Platform',
+      productAText: '面向香港學校與全球中文學習者的 AI 學習平台，通過古詩詞、中國地理與朗讀練習形成學習閉環，在文化情境中提升普通話發音、詩詞理解與中華文化認知。',
+      productAFeatureAria: 'PRAISE 產品能力',
+      productATagA: '古詩詞互動地圖',
+      productATagB: '朗讀即時糾音',
+      productATagC: '學習閉環追蹤',
+      productACta: '進入產品頁',
+      productBAlt: '智教 AI Hub 教學輔助平台界面',
+      productBFeatureAria: 'AI Hub 產品能力',
+      productBLabel: '智能 × 教學',
+      productBTitle: '智教 AI Hub',
+      productBSubtitle: 'AI Teaching Assistant · HK Curriculum',
+      productBText: '深度對應香港課程發展指引的 AI 教學輔助平台，覆蓋課前備課、課堂工作紙、形成性評估及試卷批改，協助老師把更多時間留給學生的學習成長。',
+      productBTagA: '智能備課出題',
+      productBTagB: '作文數學批改',
+      productBTagC: '班級學情分析',
+      productBCta: '了解試點合作',
+      productCAlt: 'GeoINT Agent 空間智能分析視覺',
+      productCFeatureAria: 'GeoINT Agent 產品能力',
+      productCLabel: '空間 × 智能',
+      productCTitle: 'GeoINT Agent',
+      productCSubtitle: 'Conversational GIS & Remote-Sensing',
+      productCText: '地理情報智能分析智能體，面向需使用地點資料、遙感影像與現場證據的團隊。通過開放與私有數據融合、對話式 GIS 與遙感分析，完成數據匯聚、空間分析與空間決策報告。',
+      productCTagA: '數據融合',
+      productCTagB: '對話式 GIS',
+      productCTagC: '決策報告生成',
+      productCCta: '討論應用場景',
       capabilityEyebrow: '核心能力',
-      capabilityTitle: '一個清晰的空間智能工作流',
+      capabilityTitle: '讓 AI 進入真實場景的交付能力',
       stepA: '建模',
-      stepAText: '把地點、路徑、文化引用和地理實體建成可用知識。',
+      stepAText: '把地點、路徑、文化引用、地理實體與業務規則建成可用知識。',
       stepB: '融合',
       stepBText: '整合地圖、影像、語音、文本、私有資料和開放數據。',
       stepC: '對話',
       stepCText: '讓使用者用自然語言提問、檢視證據、調整分析方向。',
       stepD: '行動',
-      stepDText: '輸出學習建議、分析摘要、監測結果和決策報告。',
-      contactEyebrow: '開始合作',
-      contactTitle: '如果你的工作和地點 學習或決策有關 我們可以聊聊',
-      contactText: '你可以直接打開右下角 AI 聯繫助手，快速了解 TopoMind 的理念、產品和合作方式。',
-      contactCta: '打開 AI 聯繫助手',
-      chatAria: 'TopoMind AI 聯繫助手',
-      chatTitle: 'TopoMind AI 聯繫助手',
-      chatSubtitle: '可以問理念 產品 合作與聯絡方式',
-      chatClose: '關閉對話',
-      quickReplies: '快速問題',
-      quickIdea: '理念',
-      quickProducts: '產品',
-      quickPartnership: '合作',
-      quickContact: '聯繫方式',
-      chatInputLabel: '輸入問題',
-      chatPlaceholder: '輸入：產品、合作、聯繫方式...',
-      chatSend: '送出',
-      chatLauncher: '聯繫我們'
+      stepDText: '輸出學習建議、教學資源、監測摘要、風險研判和決策報告。',
+      visionEyebrow: '公司願景',
+      visionTitle: '成為最值得信賴的 AI 賦能夥伴',
+      visionText: '以真實世界空間語境為基礎，讓每一個組織都能駕馭先進 AI 技術，平等地獲取 AI 帶來的變革力量，推動一個人人皆可受益於智能化的未來。',
+      visionEnglish: 'Grounding advanced AI in real-world spatial context so every organisation can harness its transformative power equally.',
+      contactEyebrow: '聯繫我們',
+      contactTitle: '讓我們一起，把 AI 帶進真實世界',
+      contactEmailLabel: '電郵 · EMAIL',
+      contactTelLabel: '聯絡電話 · TEL',
+      footerTagline: 'Spatial Intelligence for Real World AI'
     },
     en: {
       pageTitle: 'TopoMind AI Native Spatial Intelligence',
-      metaDescription: 'TopoMind builds AI-native spatial intelligence products that turn maps, imagery, cultural knowledge and workflows into conversational, reasoning-ready systems.',
-      brandSubtitle: 'AI native spatial intelligence',
-      navIdea: 'About',
+      metaDescription: 'TopoMind is a Hong Kong-based AI-native intelligence company that grounds products and workflows in real-world spatial context for education, government, NGOs and businesses.',
+      navAria: 'Main navigation',
+      navAbout: 'About',
       navProducts: 'Products',
       navCapability: 'Capabilities',
+      navVision: 'Vision',
       navContact: 'Contact',
-      heroEyebrow: 'Spatial Intelligence for Real World AI',
-      heroTitle: 'AI FOR\nREAL WORLD CONTEXT',
-      heroLead: 'TopoMind turns maps, imagery, cultural knowledge, speech and workflows into conversational, reasoning-ready AI products for education and geospatial intelligence.',
-      heroPrimary: 'Explore PRAISE AI',
-      heroSecondary: 'Talk to us',
-      heroImageAlt: 'Abstract spatial intelligence visual with terrain, map layers and an AI network',
-      heroCaptionA: 'Maps and field data',
-      heroCaptionB: 'Multimodal understanding',
-      heroCaptionC: 'Operational AI agents',
-      ideaEyebrow: 'Our approach',
-      ideaTitle: 'Turn spatial context into usable intelligence',
-      ideaStatement: 'Real-world questions rarely live in text alone. Place, distance, terrain, culture and human movement often change the answer.',
-      ideaCopyA: 'TopoMind is built around Spatial Intelligence, Cognitive Edge: when AI understands where things happen, people can learn faster, analyze more clearly and make better decisions.',
-      ideaCopyB: 'We apply this approach through two product directions: AI education grounded in culture and geography, and geospatial intelligence agents for analytical teams.',
-      focusA: 'Understand place',
-      focusAText: 'Transform maps, landmarks, routes, terrain and regional knowledge into AI context that can be retrieved, compared and reasoned over.',
-      focusB: 'Fuse multimodal data',
-      focusBText: 'Connect maps, imagery, speech, text, open data and private datasets into one coherent learning and analysis context.',
-      focusC: 'Build collaborative agents',
-      focusCText: 'Turn learning assessment, GIS operations, monitoring summaries and report generation into human-reviewed intelligent workflows.',
-      productsEyebrow: 'Products',
-      productsTitle: 'From learning to decisions bring AI into real contexts',
-      poemImageAlt: 'Shi Yu Shan He poetry Putonghua AI classroom interface',
-      poemTitle: 'Shi Yu Shan He Poetry Putonghua AI Classroom',
-      poemText: 'A Putonghua learning product that connects Chinese geography and classical poetry with PRAISE, our in-house speech acoustic assessment model.',
-      poemPointA: 'Poetry places and cultural knowledge graph',
-      poemPointB: 'Putonghua reading, correction and multidimensional scoring',
-      poemPointC: 'Teacher dashboard and learning record tracking',
-      poemCta: 'Open product page',
-      geoImageAlt: 'Spatial analysis visual for a geospatial intelligence AI agent',
-      geoTitle: 'Geospatial Intelligence and Analysis AI Agent',
-      geoText: 'For teams that work with location data, remote sensing imagery and field evidence, helping them aggregate data, analyze space, monitor risk and produce decision-ready reports.',
-      geoPointA: 'Open-data and private-data fusion',
-      geoPointB: 'Conversational GIS and remote-sensing workflows',
-      geoPointC: 'Monitoring briefs, risk judgment and report generation',
-      geoCta: 'Discuss collaboration',
-      capabilityEyebrow: 'Capabilities',
-      capabilityTitle: 'A clear workflow for spatial intelligence',
+      heroBadge: 'SPATIAL INTELLIGENCE · HONG KONG',
+      heroTitle: 'AI for Real-World Context',
+      heroKicker: 'Spatial Intelligence for Real-World AI',
+      heroLead: 'TopoMind is a Hong Kong-based AI-native intelligence company. We ground AI products in real-world spatial context and help education, government, nonprofit and business teams move from strategy to delivery.',
+      heroPrimary: 'Explore products',
+      heroSecondary: 'Discuss partnership',
+      serviceAria: 'TopoMind target users',
+      serviceLabel: 'TARGET USERS',
+      serviceEducation: 'Education',
+      serviceGovernment: 'Government',
+      serviceNgo: 'NGOs',
+      serviceBusiness: 'SMBs',
+      aboutEyebrow: 'ABOUT US',
+      aboutTitle: 'AI solutions grounded in real-world context',
+      aboutLead: 'We provide one-stop customized AI services for education institutions, government departments, nonprofit organizations and small to medium-sized businesses, spanning strategy consulting, solution design and implementation. Our core capabilities include AI education enablement, multimodal product development and end-to-end delivery of large-model workflows.',
+      pillarATitle: 'Strategy',
+      pillarAText: 'Clarify scenarios, data and organizational goals, then define an adoption path that can move from pilot to everyday use.',
+      pillarBTitle: 'Solution Design',
+      pillarBText: 'Design multimodal products and workflows that connect maps, imagery, text, speech and private data inside one business context.',
+      pillarCTitle: 'Delivery',
+      pillarCText: 'Deploy models, data pipelines, interfaces and human-in-the-loop workflows so AI becomes part of daily operations.',
+      productsEyebrow: 'PRODUCTS',
+      productsTitle: 'Three flagship AI products',
+      productsSubtitle: 'From classical poetry to spatial intelligence',
+      productAAlt: 'Shi Yu Shan He PRAISE product capability showcase',
+      productALabel: 'CULTURE × LANGUAGE',
+      productATitle: 'Shi Yu Shan He PRAISE',
+      productASubtitle: 'AI Chinese Learning Platform',
+      productAText: 'An AI learning platform for Hong Kong schools and global Chinese learners. It connects classical poetry, Chinese geography and reading practice into a learning loop that improves Putonghua pronunciation, poetry comprehension and cultural understanding.',
+      productAFeatureAria: 'PRAISE features',
+      productATagA: 'Interactive poetry map',
+      productATagB: 'Real-time pronunciation feedback',
+      productATagC: 'Learning progress loop',
+      productACta: 'Open product page',
+      productBAlt: 'AI Hub teaching assistant platform interface',
+      productBFeatureAria: 'AI Hub features',
+      productBLabel: 'INTELLIGENCE × TEACHING',
+      productBTitle: 'AI Teaching Hub',
+      productBSubtitle: 'AI Teaching Assistant · HK Curriculum',
+      productBText: 'An AI teaching assistant aligned with Hong Kong curriculum guidance. It supports lesson preparation, worksheets, formative assessment and grading, helping teachers spend more time on student growth.',
+      productBTagA: 'Lesson and worksheet generation',
+      productBTagB: 'Writing and math grading',
+      productBTagC: 'Class learning analytics',
+      productBCta: 'Discuss pilot',
+      productCAlt: 'GeoINT Agent spatial intelligence analysis visual',
+      productCFeatureAria: 'GeoINT Agent features',
+      productCLabel: 'SPATIAL × INTELLIGENCE',
+      productCTitle: 'GeoINT Agent',
+      productCSubtitle: 'Conversational GIS & Remote-Sensing',
+      productCText: 'A geospatial intelligence agent for teams working with location data, remote-sensing imagery and field evidence. It fuses open and private data, supports conversational GIS and remote-sensing workflows, and generates decision-ready spatial reports.',
+      productCTagA: 'Data fusion',
+      productCTagB: 'Conversational GIS',
+      productCTagC: 'Decision report generation',
+      productCCta: 'Discuss use cases',
+      capabilityEyebrow: 'CAPABILITIES',
+      capabilityTitle: 'Delivery capabilities for real-world AI',
       stepA: 'Model',
-      stepAText: 'Represent places, routes, cultural references and geospatial entities as usable knowledge.',
+      stepAText: 'Represent places, routes, cultural references, geospatial entities and business rules as usable knowledge.',
       stepB: 'Fuse',
-      stepBText: 'Combine maps, imagery, speech, text, private datasets and open data.',
+      stepBText: 'Integrate maps, imagery, speech, text, private datasets and open data.',
       stepC: 'Converse',
       stepCText: 'Let users ask questions, inspect evidence and adjust analysis through natural language.',
       stepD: 'Act',
-      stepDText: 'Produce learning suggestions, analysis summaries, monitoring outputs and decision reports.',
-      contactEyebrow: 'Start a conversation',
-      contactTitle: 'If your work depends on place learning or decisions we should talk',
-      contactText: 'Open the AI contact assistant in the lower-right corner to quickly understand TopoMind, our products and collaboration options.',
-      contactCta: 'Open AI contact assistant',
-      chatAria: 'TopoMind AI contact assistant',
-      chatTitle: 'TopoMind AI contact assistant',
-      chatSubtitle: 'Ask about TopoMind products partnerships or contact details',
-      chatClose: 'Close chat',
-      quickReplies: 'Quick questions',
-      quickIdea: 'About',
-      quickProducts: 'Products',
-      quickPartnership: 'Partner',
-      quickContact: 'Contact',
-      chatInputLabel: 'Type a question',
-      chatPlaceholder: 'Type: products, partner, contact...',
-      chatSend: 'Send',
-      chatLauncher: 'Contact us'
+      stepDText: 'Produce learning guidance, teaching resources, monitoring summaries, risk assessments and decision reports.',
+      visionEyebrow: 'VISION',
+      visionTitle: 'The most trusted AI enablement partner',
+      visionText: 'Grounded in real-world spatial context, we help every organization harness advanced AI technology and access the transformative power of AI on equal terms.',
+      visionEnglish: 'Grounding advanced AI in real-world spatial context so every organisation can harness its transformative power equally.',
+      contactEyebrow: 'CONTACT',
+      contactTitle: 'Bring AI into the real world with us',
+      contactEmailLabel: 'EMAIL',
+      contactTelLabel: 'TEL',
+      footerTagline: 'Spatial Intelligence for Real World AI'
     }
   };
 
-  const chat = {
-    zh: {
-      greeting: '你好，我是 TopoMind 的簡易 AI 助手。你可以問我：我們的理念、產品介紹、合作方式，或如何聯絡團隊。',
-      prompts: {
-        idea: '介紹你們的理念',
-        products: '介紹你們的產品',
-        partnership: '我們可以如何合作',
-        contact: '給我聯繫方式'
-      },
-      fallback: '我可以先介紹 TopoMind 的理念、詩語山河、GeoINT AI Agent、合作方式和聯繫方式。你也可以直接電郵 info@topomind.hk。',
-      replies: [
-        {
-          keywords: ['理念', '不同', '公司', '做什麼', 'topomind'],
-          text: 'TopoMind 是一家 AI 原生空間智能公司。我們相信 AI 需要理解地點、文化、距離、地貌和現場資料，才能真正幫助人學習、分析和決策。'
-        },
-        {
-          keywords: ['產品', '詩語山河', 'praise', '普通話', 'geo'],
-          text: '我們的產品方向包括「詩語山河｜詩詞普通話 AI 課堂」和 GeoINT AI Agent。前者用詩詞地圖、自研語音評價模型 PRAISE 和 AI 陪學幫助學生學普通話；後者面向地理分析與決策工作流。'
-        },
-        {
-          keywords: ['合作', '學校', '政府', '機構', 'partner'],
-          text: '我們適合與教育機構、文化內容夥伴、政府和 NGO、地理數據團隊及 AI 轉型夥伴合作。可以從產品試點、場景共創或數據工作流梳理開始。'
-        },
-        {
-          keywords: ['聯繫', '聯絡', 'email', '郵箱', '電話', '方式', 'contact'],
-          text: '你可以電郵聯繫我們：info@topomind.hk。請簡單說明你的機構、場景和想了解的產品方向，我們會跟進。'
-        }
-      ]
-    },
-    en: {
-      greeting: 'Hi, I am TopoMind’s simple AI contact assistant. Ask me about TopoMind, our products, partnership options or contact details.',
-      prompts: {
-        idea: 'Tell me about TopoMind',
-        products: 'Tell me about your products',
-        partnership: 'How can we partner?',
-        contact: 'Give me the contact details'
-      },
-      fallback: 'I can explain TopoMind, PRAISE AI, the GeoINT AI Agent, partnership options and contact details. You can also email info@topomind.hk.',
-      replies: [
-        {
-          keywords: ['idea', 'approach', 'different', 'company', 'topomind'],
-          text: 'TopoMind is an AI-native spatial intelligence company. We believe AI needs to understand place, culture, distance, terrain and field data to support real learning, analysis and decisions.'
-        },
-        {
-          keywords: ['product', 'poem', 'praise', 'putonghua', 'geo'],
-          text: 'Our product directions include Shi Yu Shan He, a poetry Putonghua AI classroom powered by poetry maps, PRAISE speech assessment and AI-guided practice, and GeoINT AI Agent for geospatial analysis and decision workflows.'
-        },
-        {
-          keywords: ['partner', 'school', 'government', 'ngo', 'collaborate'],
-          text: 'We can work with education institutions, cultural content partners, government and NGO teams, geospatial data teams and AI transformation partners. A pilot, scenario workshop or workflow review is a good starting point.'
-        },
-        {
-          keywords: ['contact', 'email', 'reach', 'details'],
-          text: 'You can reach us at info@topomind.hk. Please briefly share your organization, scenario and the product direction you want to discuss.'
-        }
-      ]
-    }
-  };
-
-  const widget = document.querySelector('[data-chat-widget]');
-  const launcher = document.querySelector('[data-chat-toggle]');
-  const messages = document.querySelector('[data-chat-messages]');
-  const form = document.querySelector('[data-chat-form]');
-  const input = form?.querySelector('input');
   const langToggle = document.querySelector('[data-lang-toggle]');
   const metaDescription = document.querySelector('meta[name="description"]');
   const languageStorageKey = 'topomind-lang';
   const languageVersionKey = 'topomind-default-language';
-  const languageVersion = 'en-2026-05';
+  const languageVersion = 'zh-2026-06-home-simple-contact';
 
   if (localStorage.getItem(languageVersionKey) !== languageVersion) {
     localStorage.removeItem(languageStorageKey);
@@ -222,7 +180,7 @@
   }
 
   const savedLang = localStorage.getItem(languageStorageKey);
-  let currentLang = savedLang === 'zh' || savedLang === 'en' ? savedLang : 'en';
+  let currentLang = savedLang === 'zh' || savedLang === 'en' ? savedLang : 'zh';
 
   const setText = (lang) => {
     const dictionary = translations[lang];
@@ -255,101 +213,11 @@
     }
   };
 
-  const addBubble = (text, type) => {
-    if (!messages) {
-      return;
-    }
-
-    const bubble = document.createElement('p');
-    bubble.className = `chat-bubble ${type}`;
-    bubble.textContent = text;
-    messages.appendChild(bubble);
-    messages.scrollTop = messages.scrollHeight;
-  };
-
-  const resetChat = () => {
-    if (!messages) {
-      return;
-    }
-
-    messages.innerHTML = '';
-    addBubble(chat[currentLang].greeting, 'assistant');
-  };
-
-  const openChat = () => {
-    if (!widget || !launcher || !input) {
-      return;
-    }
-
-    widget.classList.add('open');
-    launcher.setAttribute('aria-expanded', 'true');
-    requestAnimationFrame(() => input.focus());
-  };
-
-  const closeChat = () => {
-    if (!widget || !launcher) {
-      return;
-    }
-
-    widget.classList.remove('open');
-    launcher.setAttribute('aria-expanded', 'false');
-  };
-
-  const getReply = (message) => {
-    const normalized = message.trim().toLowerCase();
-    const config = chat[currentLang];
-    const match = config.replies.find((reply) => reply.keywords.some((keyword) => normalized.includes(keyword.toLowerCase())));
-    return match ? match.text : config.fallback;
-  };
-
-  const sendMessage = (message) => {
-    const cleanMessage = message.trim();
-    if (!cleanMessage) {
-      return;
-    }
-
-    addBubble(cleanMessage, 'user');
-    addBubble(getReply(cleanMessage), 'assistant');
-  };
-
   setText(currentLang);
-  resetChat();
-
-  document.querySelectorAll('[data-chat-open]').forEach((trigger) => {
-    trigger.addEventListener('click', openChat);
-  });
-
-  launcher?.addEventListener('click', () => {
-    if (widget?.classList.contains('open')) {
-      closeChat();
-    } else {
-      openChat();
-    }
-  });
-
-  document.querySelectorAll('[data-chat-close]').forEach((button) => {
-    button.addEventListener('click', closeChat);
-  });
-
-  document.querySelectorAll('[data-chat-prompt]').forEach((button) => {
-    button.addEventListener('click', () => {
-      openChat();
-      sendMessage(chat[currentLang].prompts[button.dataset.chatPrompt] || '');
-    });
-  });
-
-  form?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    sendMessage(input?.value || '');
-    if (input) {
-      input.value = '';
-    }
-  });
 
   langToggle?.addEventListener('click', () => {
     currentLang = currentLang === 'zh' ? 'en' : 'zh';
     localStorage.setItem(languageStorageKey, currentLang);
     setText(currentLang);
-    resetChat();
   });
 })();

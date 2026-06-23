@@ -10,3 +10,6 @@ logs/
 # OS
 Thumbs.db
 .DS_Store
+
+# Local backups and archived design drafts
+backup/
